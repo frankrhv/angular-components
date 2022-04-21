@@ -1,0 +1,30 @@
+<div class="ui dimmer visible active">
+  <div class="ui modal visible active">
+    <i (click)="onCloseModal()" class="close icon"></i>
+    <div class="header">Profile Picture</div>
+    <div class="image content">
+      <div class="ui medium image">
+        <img src="https://semantic-ui.com/images/avatar2/large/rachel.png" />
+      </div>
+      <div class="description">
+        <div class="ui header">We've auto-chosen a profile image for you.</div>
+        <p>
+          We've grabbed the following image from the
+          <a href="https://www.gravatar.com" target="_blank">gravatar</a> image
+          associated with your registered e-mail address.
+        </p>
+        <p>Is it okay to use this photo?</p>
+      </div>
+    </div>
+    <div class="actions">
+      <div (click)="onCloseModal()" class="ui black deny button">Nope</div>
+      <div
+        (click)="onCloseModal()"
+        class="ui positive right labeled icon button"
+      >
+        Yep, that's me
+        <i (click)="onCloseModal()" class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
